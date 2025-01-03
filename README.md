@@ -1,0 +1,3 @@
+# Node.js Server Shutdown Issue
+
+This repository demonstrates a common issue in Node.js servers where asynchronous operations or event listeners prevent graceful shutdown.  The server may fail to immediately terminate when you use Ctrl+C or send a SIGINT signal, potentially leading to resource leaks.  The solution explores strategies for implementing graceful shutdown using `process.on('SIGINT')` to ensure clean resource management before exiting.
